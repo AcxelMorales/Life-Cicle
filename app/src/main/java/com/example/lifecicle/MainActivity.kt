@@ -52,4 +52,9 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "App oculta", Toast.LENGTH_SHORT).show()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this, "App destruida", Toast.LENGTH_SHORT).show()
+    }
+
 }
