@@ -37,4 +37,19 @@ class MainActivity : AppCompatActivity() {
         outState.putString(this.NAME, this.name)
     }
 
+    override fun onPause() {
+        super.onPause()
+        Toast.makeText(this, "En transiciòn", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Toast.makeText(this, "App visible", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Toast.makeText(this, "App oculta", Toast.LENGTH_SHORT).show()
+    }
+
 }
